@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<main class="main">
+		<div class="section">
+            <span class="section_day">
+                <label class="lb" for="day">DAY</label>
+                <input name="day" id="day" type="number" placeholder="DD">
+                <span class="mesage_err">This field is required</span>
+            </span>
+			<span class="section_month">
+                <label class="lb" for="month">MONTH</label>
+                <input name="month" id="month" type="number" placeholder="MM">
+                <span class="mesage_err">This field is required</span>
+            </span>
+			<span class="section_year">
+                <label class="lb" for="year">YEAR</label>
+                <input name="year" id="year" type="number" placeholder="YYYY">
+                <span class="mesage_err ">This field is required</span>
+            </span>
+        </div>
+        <div class="btn">
+			<svg class="get_date" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </div>
+        <div class="container">
+            <span class="container_years date">
+                <span>--</span> Years
+            </span>
+            <span  class="container_months date">
+                <span>--</span> Months
+            </span>
+            <span class="container_days date">
+                <span>--</span> Days
+            </span>
+        </div>
+	</main>
+</body>
+<script src="index.js"></script>
+</html>
