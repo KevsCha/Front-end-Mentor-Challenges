@@ -38,6 +38,7 @@ body{
 	align-items: center;
 	justify-content: flex-start;
 	font-style: initial;
+	position: relative;
 }
 .section span
 {
@@ -55,7 +56,6 @@ body{
 	position: absolute;
 	top: -30px;
 }
-
 .section .mesage_err
 {
 	position: absolute;
@@ -66,11 +66,34 @@ body{
 	font-style: italic;
 	top: 50px;
 }
-.section .action
+.section .input_err
 {
 	display: block;
 	color: hsl(0, 100%, 67%);
 	border-color: hsl(0, 100%, 67%);
+}
+.section .mesage_inv
+{
+	position: absolute;
+	display: none;
+	color: hsl(0, 100%, 67%);
+	font-size: 14px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-style: italic;
+	top: 50px;
+	left: 39%;
+}
+.section .invalid_err
+{
+	display: block;
+}
+.section .invalid_err_inp
+{
+	border: 1.5px solid hsl(0, 100%, 67%);
+}
+.section .invalid_err_lab
+{
+	color: hsl(0, 100%, 67%);
 }
 .section input
 {
