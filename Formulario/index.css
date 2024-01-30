@@ -1,0 +1,434 @@
+@font-face
+{
+	font-family: 'Ubuntu_Bold';
+	src: url('fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu_Medium';
+	src: url(fonts/Ubuntu-Medium.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu_Regular';
+	src: url(fonts/Ubuntu-Regular.ttf) format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Ubuntu_Regular';
+}
+body
+{
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 100%, 97%);
+}
+.container
+{
+    width: 900px;
+    height: 580px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+}
+.side_bar
+{
+    width: 40%;
+    height: 95%;
+	padding-top: 20px;
+    margin: 15px 0 15px 15px;
+    background-image: url('./img/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.side_bar > div
+{
+	width: 50%;
+	margin: 15px 20px;
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+}
+.side_bar > div > p
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	color: white;
+	border: solid white 1.5px;
+}
+.side_bar .select
+{
+	background-color: hsl(206, 94%, 87%);
+	color: hsl(243, 100%, 62%);
+	border-color: hsl(243, 100%, 62%);
+}
+.side_bar .section_ind
+{
+	font-size: 12px;
+	color: hsl(231, 11%, 63%);
+	font-weight: 700;
+}
+.side_bar h4 
+{
+	color: hsl(231, 100%, 99%);
+	font-size: 14px;
+}
+
+form
+{
+	width: 470px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+form h1
+{
+	font-family: 'Ubuntu_bold';
+}
+form .steps_form > .select
+{
+	display: flex;
+}
+.steps_form
+{
+	width: inherit;
+	height: -webkit-fill-available;
+}
+.steps_form > div
+{
+	max-height: 450px;
+	height: 100%;
+}
+.step_one
+{
+	display: none;
+	flex-direction: column;
+}
+.step_one_title
+{
+	margin-top: 10px;
+	color: hsl(213, 96%, 18%);
+	height: 100px;
+}
+.step_one_title > p
+{
+	color:  hsl(231, 11%, 63%);
+	font-family: 'Ubuntu_Medium';
+}
+.step_one_info div
+{
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	margin-bottom: 20px;
+}
+.step_one_info > div > label
+{
+	color: hsl(213, 96%, 18%);
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.step_one_info > div > input
+{
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	padding: 0 15px;
+	font-size: 16px;
+	border: solid 2px hsl(229, 24%, 87%);
+}
+.step_one_info > div > input:focus
+{
+	border: solid 2px hsl(213, 96%, 18%);
+	outline: none;
+}
+.step_one_info > div > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button
+{
+	-webkit-appearance: none;
+}
+.step_two
+{
+	display: none;
+	flex-direction: column;
+}
+.step_two_title
+{
+	margin-top: 10px;
+	color: hsl(213, 96%, 18%);
+	height: 100px;
+}
+.step_two_title > p
+{
+	color:  hsl(231, 11%, 63%);
+	font-family: 'Ubuntu_Medium';
+}
+.step_two_info
+{
+	width: 100%;
+	/*height: -webkit-fill-available;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.step_two_info .cards_plan
+{
+	width: inherit;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.cards_plan .card
+{
+	width: 31%;
+	height: 200px;
+	padding: 15px;
+	background-color: hsl(217, 100%, 97%);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border: solid 1px rgb(2, 41, 90);
+	border-radius: 5px;
+}
+.cards_plan svg
+{
+	position: absolute;
+	top: 10%;
+	left: 13%;
+}
+.step_two_info .option_check
+{
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	background-color: hsl(217, 100%, 97%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+}
+.option_check input
+{
+	display: block;
+}
+/*
+--
+--
+--
+	seguir desarrollando el formulario la parte del checked
+--
+--
+--
+*/
+#monthly:checked+.monthly_lab
+{
+	width: 100px;
+	height: 200px;
+	color: hsl(213, 96%, 18%);
+	font-size: 20px;
+	font-weight: bold;
+}
+.case_check
+{
+	width: 50px;
+	height: 20px;
+	background-color: rgb(2, 41, 90);
+	border-radius: 100px;
+	margin: 0 30px;
+	cursor: pointer;
+	position: relative;
+}
+.case_check .visual_check
+{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 2px;
+	left: 3px;
+	border-radius: 100px;
+	background-color: white;
+}
+.case_check .monthly
+{
+	top: 2px;
+	left: 3px;;
+
+}
+.case_check .yearly
+{
+	top: 2px;
+	left: 65%;
+}
+.step_three
+{
+	display: none;
+	flex-direction: column;
+}
+.step_three_title
+{
+	margin-top: 10px;
+	color: hsl(213, 96%, 18%);
+	height: 100px;
+}
+.step_three_title > p 
+{
+	color: hsl(231, 11%, 63%);
+	font-family: 'Ubuntu_medium';
+}
+.step_three_info
+{
+	display: flex;
+	flex-direction: column;
+}
+.option_service
+{
+	border: 1px solid black;
+	padding: 15px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.option_service > div
+{
+	width: 250px;
+}
+.step_four
+{
+	display: none;
+	flex-direction: column;
+}
+.step_four_title
+{
+	margin-top: 10px;
+	color: hsl(213, 96%, 18%);
+	height: 100px;
+}
+.step_four_title > p
+{
+	color: hsl(231, 11%, 63%);
+	margin-top: 10px;
+	font-family: 'Ubuntu_Medium';
+}
+
+.details
+{
+	padding: 20px;
+	background-color: hsl(217, 100%, 97%);
+	border-radius: 10px;
+}
+.details .details_serv
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.details_serv > p
+{
+	color: hsl(213, 96%, 18%);
+	font-family: 'Ubuntu_Bold';
+}
+.serv
+{
+	color: hsl(213, 96%, 18%);
+}
+.cost > p
+{
+	color: hsl(213, 96%, 18%);
+	font-family: 'Ubuntu_Medium';
+	margin-bottom: 5px;
+}
+.serv > p
+{
+	color: hsl(231, 11%, 63%);
+	font-family: 'Ubuntu_Medium';
+	margin-bottom: 5px;
+}
+.details > .bar
+{
+	width: 100%;
+	margin: 20px 0;
+	border: solid 1px hsl(229, 24%, 87%);
+}
+.details_tot
+{
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.details_tot > div > h4
+{
+	color: hsl(231, 11%, 63%);
+}
+.details_tot > p
+{
+	color: hsl(243, 100%, 62%);
+	font-family: 'Ubuntu_Bold';
+	font-size: 20px;
+}
+
+.step_finish
+{
+	display: none;
+}
+.btns
+{
+	width: inherit;
+	height: 50px;
+	position: relative;
+	/*display: flex;
+	justify-content: space-between;*/
+}
+.btns #btn_back
+{
+	position: absolute;
+	left: 0;
+}
+.btns .none
+{
+	display: none;
+}
+.btns #btn_next
+{
+	position: absolute;
+	left: 79%;
+}
+.btns > input
+{
+	width: 100px;
+	height: inherit;
+	border-radius: 5px;
+	font-size: 14px;
+	background-color: hsl(213, 96%, 18%);
+	border: none;
+	color: white;
+}
+.btns > input:hover
+{
+	background-color: hsl(243, 100%, 62%);
+}
+.btns > input:active
+{
+	background-color: hsl(228, 100%, 84%);
+}
