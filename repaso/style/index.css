@@ -1,0 +1,31 @@
+@import url('../bootstrap/fontawesome/css/all.css');
+@import url('../bootstrap/fontawesome/css/fontawesome.min.css');
+@import url('../bootstrap/fontawesome/css/fontawesome.css');
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    src: url(../fonts/fontawesome-webfont.eot);
+}
+@font-face {
+    src: url(../fonts/fontawesome-webfont.svg);
+    font-family: 'Font Awesome 6 Brands';
+}
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    src: url(../fonts/fontawesome-webfont.ttf);
+}
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    src: url(../fonts/fontawesome-webfont.woff);
+}
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    src: url(../fonts/fontawesome-webfont.woff2);
+}
+.social_box ul{
+    display: flex;
+    flex-direction: row;
+}
+.social_box li{
+    margin-right: 10px;
+    list-style: none;
+}
