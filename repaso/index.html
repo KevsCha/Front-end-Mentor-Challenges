@@ -12,26 +12,25 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="bg-dark">
-		<nav class="navbar ">
+    <header class="nav_header">
+		<nav class="navbar bg-dark">
 			<div class="container-fluid">
 				<div>
 				  <span class="navbar-brand mb-0 h1 text-light">info@technotrustits.in</span>
 				  <span class="navbar-brand mb-0 h1 text-light">+91 9830298892</span>
 				</div>
-				<div class="social_box text-light">
+				<div class="text-light social_box ">
 					<ul>
-						<li><a href=""><i class="fa fa-brands fa-square-facebook fa-2x1"></i></a></li>
-						<li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						
+						<li><a href=""><span>F</span></a></li>
+						<li><a href=""><span>I</span></a></li>
+						<li><a href=""><span>L</span></a></li>
+						<li><a href=""><span>T</span></a></li>
+						<li><a href=""><span>R</span></a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<nav class="navbar navbar-expand-lg mx-4">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img src="./img/logos/logo.png" alt="Logo" width="150" height="40" class="d-inline-block align-text-top">
@@ -40,26 +39,124 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-					<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" aria-disabled="true">Disabled</a>
-					</li>
+					<ul class="navbar-nav list_hov">
+						<li class="nav-item py-1 px-2 mx-2 card_icon activate">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item py-1 px-2 mx-2 card_icon">
+							<a class="nav-link" href="#">About Us</a>
+						</li>
+						<li class="nav-item py-1 px-2 mx-2 card_icon">
+							<a class="nav-link" href="#">Our Services</a>
+						</li>
+						<li class="nav-item py-1 px-2 mx-2 card_icon">
+							<a class="nav-link" href="#">Portfolio</a>
+						</li>
+						<li class="nav-item py-1 px-2 mx-2 card_icon">
+							<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item py-1 px-2 mx-2 card_icon">
+							<a class="nav-link" href="#">Testimonials</a>
+						</li>
+						<li class="nav-item py-1 px-2 mx-2 card_icon">
+							<a class="nav-link" href="#">Pricing</a>
+						</li>
+						<li class="nav-item py-1 px-2 mx-2 card_icon">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 	  </nav>
     </header>
     <main>
-
+		<div class="slider">
+			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item text-bg-dark active" style="max-height: 650px;" data-bs-int20rval="20000">
+					<img src="./img/slider_01.jpg" class="d-block w-100" alt="...">
+					<div class="card-img-overlay slide_txt">
+						<h1>Outstanding <span>IT</span> Services</h1>
+						<h3>With Techno Trust IT Solutions responsive landing page template,
+							you can promote your all web design & development services.
+						</h3>
+						<div>
+							<a href=""></a><button>Read More</button></a>
+							<a href=""></a><button>Contact</button></a>
+						</div>
+					</div>
+				  </div>
+				  <div class="carousel-item card text-bg-dark" style="max-height: 650px;" data-bs-interval="20000">
+					<img src="./img/slider_02.jpg" class="d-block w-100" alt="...">
+					<div class="card-img-overlay slide_txt">
+						<h1>One Stop Solution For <span>Website</span> Development</h1>
+						<h3>With Techno Trust IT Solutions responsive landing page template,
+							you can promote your all web design & development services.</h3>
+						<div>
+							<button>Read More</button>
+							<button>Contact</button>
+						</div>
+					</div>
+					</div>
+				  <div class="carousel-item card text-bg-dark" style="max-height: 650px;" data-bs-interval="20000">
+					<img src="./img/slider_03.jpg" class="d-block w-100" alt="...">
+					<div class="card-img-overlay slide_txt">
+						<h1>Online <span>System</span> Development</h1>
+						<h3>With Techno Trust IT Solutions responsive landing page template,
+							you can promote your all web design & development services.
+						</h3>
+						<div>
+							<button>Read More</button>
+							<button>Contact</button>
+						</div>
+					</div>
+				  </div>
+				  <div class="bg_absolute"></div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+		</div>
+		<!---------------------------- section --------------------------->
+		<div class="pad">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<article>
+							<h4>ABOUT US</h4>
+						<h2>Welcome to Techno Trust IT Solutions</h2>
+						<p>We are Expert in Website Development | Online Portal Development | Mobile Application Development | E-Commerce Support System</p>
+						<p>Techno Trust IT Solutions provide one stop solution for Website Development, Website Hosting , Website maintenance Domain registration and may more IT Services Techno Trust IT Solutions experienced and expert in Online Admission System Development, Online Voting System Development, Online Examination System Development and many more. It has been designing and developing websites on open source technologies in India, with experienced website developers in West bengal, our solutions are always the best the industry has to offer, packing both affordability, extensive power, and scalability. Our end-products are guaranteed to uphold to the clients wants, needs, and expectations. As our reputation stands, we are not a company to make a website and then clean our hands of it, we are involved from day one of your website’s launch and we stay involved for as long as you keep us as your service provider.</p>
+						<button>Learn More</button>
+					</article>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<img src="./img/article_img1.jpg" class="img-fluid" alt="...">
+				</div>
+				</div>
+				<div class="w-100 _layout"> </div>
+				<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<article>
+						<h4>WHO WE ARE</h4>
+						<h2>We Are Techno Trust IT Solutions</h2>
+						<p>We are trusted web solution provider since 2010</p>
+						<p>We started our journey in last Decayed with website development service. Gradually we become one of the most trusted web service provider in South Bengal. Now we have many clients all over India. We have completed more than 100 projects. We achieve satisfaction from our client like Many Statuary Organization, Educational Institute, Govt. College, Business Firm, E-commerce body etc. We are providing the following Service Website Development, Hosting, Maintenance, Domain Registration, Online Portal Development, E-Commerce Solutions</p>
+						<button>Learn More</button>
+					</article>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<img src="./img/article_img2.jpg" class="img-fluid" alt="...">
+				</div>
+			</div>
+		</div>
+		</div>
     </main>
 </body>
 <script src="bootstrap/js/bootstrap.js"></script>
