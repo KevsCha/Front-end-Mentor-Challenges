@@ -41,6 +41,7 @@
     --octonary-color: #999999;
     --nonary-color: #CCCCCC;
     --denary-color: #E6E6E6;
+    --bd-warning: #FFC107;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Open Sans', sans-serif;
     --tertiary-font: 'Montserrat', sans-serif;
@@ -149,4 +150,147 @@ header.nav_header{
     border: .5px dashed #333333;
     opacity: .1;
     /* border-style: dashed; */
+}
+.pad{
+    padding: 100px 0;
+}
+.pad button{
+    padding: 15px 45px;
+    border-radius: 25px 0;
+    background-color: var(--bg-card_btn);
+    color: var(--quaternary-color);
+    border: 1px solid var(--bg-card_btn);
+    transition: 0.3s;
+    margin: 5px 5px;
+}
+.pad button:hover{
+    background-color: var(--senary-color);
+}
+.pad article h4{
+    font-size: 15px;
+    color: var(--octonary-color);
+    font-weight: 600;
+}
+.pad article p:first-of-type{
+    font-size: 18px;
+    color: var(--octonary-color);
+    font-style: italic;
+    /* font-weight: 400; */
+}
+.pad article p:last-of-type{
+    font-size: 14px;
+    color: var(--octonary-color);
+    font-weight: 400;
+    line-height: 2
+}
+.pad .resp_col{
+    flex-direction: column-reverse;
+}
+.features{
+    padding: 120px;
+    background-image: url('../img/parallax_04.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.features span{
+    background-color: var(--bg-card_btn);
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 25px 0;
+    color: var(--quaternary-color);
+    /* box-shadow: 0 0 0 10px var(--quaternary-color); */
+}
+.features span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--quaternary-color); */
+    top: 0px;
+    left: 0px;
+    /* padding: 10px; */
+    border: 3px solid var(--bd-warning);
+    scale: 1.5;
+    border-radius: 25px 0;
+    filter: blur(5px);
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.features span:hover::after{
+    filter: blur(0);
+    border: 1px solid var(--bd-warning);
+    scale: 1.2;
+    opacity: 1;
+}
+.features h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--quaternary-color);
+}
+.features h4{
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--bd-warning);
+    text-shadow: 0 0 25px var(--quaternary-color);
+}
+.services{
+    padding: 120px 0;
+}
+.services p{
+    color: var(--octonary-color);
+}
+.services .card img{
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+}
+.slide_example{
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    /* overflow: hidden; */
+}
+.card_service{
+    width: 33%;
+    margin: 20px;
+    /* padding: 20px; */
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0px #333333;
+    transition: 0.3s;
+}
+.card_service .card-body{
+    padding: 20px;
+    height: 250px;
+}
+.card_service .card-text{
+    /* box-shadow: 0 0 10px 0px #333333; */
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
+    height: auto;
+}
+.banner{
+    background-image: url('../img//parallax_05.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0;
+}
+.banner button{
+    padding: 15px 45px;
+    border-radius: 25px 0;
+    background-color: var(--bg-card_btn);
+    color: var(--quaternary-color);
+    border: 1px solid var(--bg-card_btn);
+    transition: 0.3s;
+    margin: 5px 5px;
+}
+.banner button:hover{
+    background-color: var(--senary-color);
 }
