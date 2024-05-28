@@ -108,10 +108,21 @@ header.nav_header{
     flex-direction: column;
     align-items: center;
 }
+
 .carousel-item:nth-child(1) .slide_txt{
     align-items: start;
     text-align: left;
     padding-left: 10%;
+}
+.slide_txt h1{
+    /* padding: 0 10px; */
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    transform: translateY(-150%);
+    filter: blur(15px);
+    opacity: 0;
+    animation: pos_origin 1s .5s ease forwards;
 }
 .carousel-item:nth-child(1) .slide_txt h3{
     width: 50ch;
@@ -119,19 +130,29 @@ header.nav_header{
 .slide_txt span{
     color: var(--bg-card_btn);
 }
-.slide_txt h1{
-    padding: 0 10px;
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-family: 'Raleway-bold', sans-serif;
-}
 .slide_txt h3{
     font-size: 1.3em;
     font-weight: 400;
     margin-bottom: 25px;
     width: 50ch;
     font-family: 'Raleway', sans-serif;
+    transform: translateY(250%);
+    filter: blur(15px);
+    animation: pos_origin 1s .5s ease forwards;
+    opacity: 0;
+}
+.slide_txt > div{
+    transform: translateY(200%);
+    filter: blur(15px);
+    animation: pos_origin 1s .5s ease forwards;
+    opacity: 0;
+}
+@keyframes pos_origin{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
 .slide_txt button{
     padding: 15px 45px;
@@ -141,10 +162,12 @@ header.nav_header{
     border: 1px solid var(--bg-card_btn);
     transition: 0.3s;
     margin: 5px 5px;
+    
 }
 .slide_txt button:hover{
     background-color: var(--senary-color);
 }
+
 ._layout{
     margin: 100px 0;
     border: .5px dashed #333333;
@@ -259,6 +282,10 @@ header.nav_header{
     object-position: center;
     height: 250px;
 }
+.services .container div:last-child{
+    margin-top: 150px;
+
+}
 .slide_example{
     width: 100%;
     display: flex;
@@ -323,6 +350,9 @@ header.nav_header{
     margin-right: 15px;
 }
 /* ---------------mobile_mockup---------------- */
+.mobile_mockup{
+    padding: 120px 0;
+}
 .mobile_mockup .cont_flex{
     display: flex;
     justify-content: space-between;
@@ -426,6 +456,18 @@ header.nav_header{
     }
 }
 @media screen and (width <= 992px){
+    .slide_txt {
+        top: 50%;
+    }
+    .slide_txt h1{
+        font-size: 2.5rem;
+    }
+    .slide_txt h3{
+        font-size: 1em;
+    }
+    .slide_txt button{
+        padding: 10px 30px;
+    }
     .mobile_mockup .cont_flex{
         gap: 0 50px;
     }
@@ -464,6 +506,41 @@ header.nav_header{
     .mobile_mockup .content_img{
         display: none;
     }
+}
+@media screen and (width <= 576px) {
+    .slide_txt{
+        width: 100%;
+    }
+    .slide_txt h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .slide_txt h3{
+        text-align: center;
+        font-size: .7rem;
+    }
+    .slide_txt button{
+        padding: 10px 20px;
+    }
+    .features{
+        padding: 50px 20px;
+    }
+    .services{
+        padding: 50px 0;
+    }
+    .services .container div:last-child{
+        margin-top: 50px;
+    }
+    .mobile_mockup{
+        padding: 50px 0;
+    }
+    .mobile_mockup .cont_flex .box .icon_box{
+        width: 90px;
+    }
+    .mobile_mockup .cont_flex .info{
+        padding: 5px 10px;
+    }
+    
 }
 .footer{
     padding: 50px 0;
