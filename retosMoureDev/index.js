@@ -18,8 +18,8 @@ function calcu(){
     let width = document.getElementById('width_img');
     let height = document.getElementById('height_img');
     
-    // width.value = 5;
-    // height.value = 5;
-    // width.value = img.width;
-
+    width.value = container_img.naturalWidth;
+    height.value = container_img.naturalHeight;
+    
+    console.log(width.value, height.value);
 }
