@@ -17,9 +17,13 @@ img.addEventListener('change', (e) =>{
 function calcu(){
     let width = document.getElementById('width_img');
     let height = document.getElementById('height_img');
+    let infoAspect = document.getElementById('infoAspectRatio');
+    let resto;
     
     width.value = container_img.naturalWidth;
     height.value = container_img.naturalHeight;
     
-    console.log(width.value, height.value);
+    resto = width.value % height.value;
+    infoAspect.innerText = width.value / height.value; 
+    console.log(resto);
 }
